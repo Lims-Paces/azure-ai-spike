@@ -21,7 +21,7 @@ messages = [
 
 def create_chatbot(message):
     chat_completion = client.chat.completions.create(
-    model="Tublian-gpt4-deployment-test",
+    model="Tublian-gpt4o-deployment-test",
     messages=message
     )
     return chat_completion.choices[0].message.content
